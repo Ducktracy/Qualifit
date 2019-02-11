@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>EXAMPLE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/blue.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+
+</head>
+    
+     
+    
+    
+    
+<!--
+  <script> //image-logo
+        
+  $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/companiesLogosAndNames', 
+    //data: { get_param: 'companies' }, 
+    dataType: 'json',
+    success: function (data) {
+        
+        let jsonObject = JSON.parse(JSON.stringify(data.companies));
+        var a = (jsonObject[0].logoImageLink);
+        var b = (jsonObject[1].logoImageLink);
+        var c = (jsonObject[2].logoImageLink);
+        var d = (jsonObject[3].logoImageLink);
+        var e = (jsonObject[4].logoImageLink);
+      
+        
+      
+        
+        $('#imageBlock1').find('img').attr('src',a);
+        $('#imageBlock2').find('img').attr('src',b);
+        $('#imageBlock3').find('img').attr('src',c);
+        $('#imageBlock4').find('img').attr('src',d);
+        $('#imageBlock5').find('img').attr('src',e);
+       
+        
+    }
+  });
+        
+        
+    </script>
+-->
+<!--
+    <script> //Description
+        
+  $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/jobposts', 
+    //data: { get_param: 'companies' }, 
+    dataType: 'json',
+    success: function (data) {
+        
+        let jsonObject = JSON.parse(JSON.stringify(data));
+        var a = (jsonObject.jobPosts[0].description);
+        var b = (jsonObject.jobPosts[1].description);
+        var c = (jsonObject.jobPosts[2].description);
+        var d = (jsonObject.jobPosts[3].description);
+        
+    
+        $('#description1').append( a );
+        $('#description2').append( b );
+        $('#description3').append( c );
+        $('#description4').append( d );
+        
+    }
+  });
+        
+        
+    </script>
+-->
+    
+<!--
+    <script> //Public Title
+        
+  $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/jobposts', 
+    //data: { get_param: 'companies' }, 
+    dataType: 'json',
+    success: function (data) {
+        
+        let jsonObject = JSON.parse(JSON.stringify(data));
+        var a = (jsonObject.jobPosts[0].publicTitle);
+        var b = (jsonObject.jobPosts[1].publicTitle);
+        var c = (jsonObject.jobPosts[2].publicTitle);
+        var d = (jsonObject.jobPosts[3].publicTitle);
+        
+    
+        $('#public-title1').append( a );
+        $('#public-title2').append( b );
+        $('#public-title3').append( c );
+        $('#public-title4').append( d );
+        
+    }
+  });
+        
+        
+    </script>
+-->
+    
+<!--
+    <script> //Company Name
+        
+  $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/jobposts', 
+    //data: { get_param: 'companies' }, 
+    dataType: 'json',
+    success: function (data) {
+        
+        let jsonObject = JSON.parse(JSON.stringify(data));
+        var a = (jsonObject.jobPosts[0].companyName);
+        var b = (jsonObject.jobPosts[1].companyName);
+        var c = (jsonObject.jobPosts[2].companyName);
+        var d = (jsonObject.jobPosts[3].companyName);
+        
+    
+        $('#company-name1').append( a );
+        $('#company-name2').append( b );
+        $('#company-name3').append( c );
+        $('#company-name4').append( d );
+        
+    }
+  });
+        
+        
+    </script>
+    
+-->
+<!--
+    <script> //company-avatar
+        
+ $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/jobposts', 
+    //data: { get_param: 'companies' }, 
+    dataType: 'json',
+    success: function (data) {
+        
+        let jsonObject = JSON.parse(JSON.stringify(data));
+        var a = (jsonObject.jobPosts[0].companyId.logoImageLink);
+        var b = (jsonObject.jobPosts[1].companyId.logoImageLink);
+        var c = (jsonObject.jobPosts[2].companyId.logoImageLink);
+        var d = (jsonObject.jobPosts[3].companyId.logoImageLink);
+        
+    
+        $('#image-avatar1').find('img').attr('src',a);
+        $('#image-avatar2').find('img').attr('src',b);
+        $('#image-avatar3').find('img').attr('src',c);
+        $('#image-avatar4').find('img').attr('src',d);
+     
+        
+    }
+  });
+        
+        
+    </script>
+-->
+    
+<!--
+    <script>  // LINKS
+
+        
+  $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/companyProfile/5c443e86f3acc12d0cfc68ea', 
+    dataType: 'json',
+    success: function (data) {
+ 
+       
+        let jsonObject = JSON.parse(JSON.stringify(data));
+        var x = (jsonObject.company.website);
+        var y = (jsonObject.company.startupFinderPage);
+        $('#link1').find('a').attr('href',x);
+        $('#link2').find('a').attr('href',y);
+        
+        
+        
+    }
+  });
+        
+        
+    </script>  
+    
+-->
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header Container
+================================================== -->
+<header id="header-container" class="fullwidth">
+
+	<!-- Header -->
+	<div id="header">
+		<div class="container">
+			
+			<!-- Left Side Content -->
+			<div class="left-side">
+				
+				<!-- Logo -->
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+
+				<!-- Main Navigation -->
+				<nav id="navigation">
+					<ul id="responsive">
+
+						<li><a href="index.html" >Home</a>
+						</li>
+
+						<li><a href="home.html">About</a>
+						</li>
+
+						<li><a href="how_it_works.html">How it works</a>
+							
+						</li>
+
+						<li><a href="meet_companies.html">Meet the Companies</a>
+							
+						</li>
+
+						<li><a href="#" class="current">For Employers</a>
+							
+						</li>
+
+					</ul>
+				</nav>
+				<div class="clearfix"></div>
+				<!-- Main Navigation / End -->
+				
+			</div>
+			<!-- Left Side Content / End -->
+
+
+			<!-- Right Side Content / End -->
+			<div class="right-side">
+
+				
+
+				<!-- User Menu -->
+				<div class="header-widget">
+
+					<!-- Messages -->
+					<div class="header-notifications user-menu">
+						<div class="header-notifications-trigger">
+							<a href="#"><div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div></a>
+						</div>
+
+						<!-- Dropdown -->
+						<div class="header-notifications-dropdown">
+
+							<!-- User Status -->
+							<div class="user-status">
+
+								<!-- User Name / Avatar -->
+								<div class="user-details">
+									<div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div>
+									<div class="user-name">
+										Tom Smith <span>Freelancer</span>
+									</div>
+								</div>
+								
+								<!-- User Status Switcher -->
+								<div class="status-switch" id="snackbar-user-status">
+									<label class="user-online current-status">Online</label>
+									<label class="user-invisible">Invisible</label>
+									<!-- Status Indicator -->
+									<span class="status-indicator" aria-hidden="true"></span>
+								</div>	
+						</div>
+						
+						<ul class="user-menu-small-nav">
+							<li><a href="dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
+							<li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
+							<li><a href="index-logged-out.html"><i class="icon-material-outline-power-settings-new"></i> Logout</a></li>
+						</ul>
+
+						</div>
+					</div>
+
+				</div>
+				<!-- User Menu / End -->
+
+				<!-- Mobile Navigation Button -->
+				<span class="mmenu-trigger">
+					<button class="hamburger hamburger--collapse" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</span>
+
+			</div>
+			<!-- Right Side Content / End -->
+
+		</div>
+	</div>
+	<!-- Header / End -->
+
+</header>
+<div class="clearfix"></div>
+<!-- Header Container / End -->
+
+
+
+<!-- Intro Banner
+================================================== -->
+<!-- add class "disable-gradient" to enable consistent background overlay -->
+<div class="intro-banner-meet">
+                       <div class="about-meet-for">
+						<h3>Are you a Jerusalem-based Tech Company?</h3>
+                          <h4>Get Access to a growing number of potencial candidates.</h4>
+                           <br>
+                           <h4>It's simple.It's friendly and it's free.</h4>
+					</div>
+    
+    
+    </div>
+
+
+<!-- Content
+================================================== -->
+<!-- Category Boxes -->
+    <!--HOW IT WORKS-->
+    <div class="section  padding-bottom-65">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xl-12">
+				<!-- Section Headline -->
+                <div class="pagination-container margin-top-30 margin-bottom-60">
+						<nav class="pagination">
+                            <br>
+						</nav>
+					</div>
+			</div>
+			
+			<div class="col-xl-4 col-md-4">
+				<!-- Icon Box -->
+				<div class="icon-box with-line">
+					<!-- Icon -->
+					<div class="icon-box-circle">
+						<div class="icon-box-circle-inner">
+							<i class="icon-feather-award"></i>
+							<div class="icon-box-check"><i class="icon-material-outline-check"></i></div>
+						</div>
+					</div>
+					<h3>Create your profile</h3>
+					<p>Create your personal profile with skills, experience and requirements. It only takes 5 minutes.</p>
+				</div>
+                
+			</div>
+
+			<div class="col-xl-4 col-md-4">
+				<!-- Icon Box -->
+				<div class="icon-box with-line">
+					<!-- Icon -->
+					<div class="icon-box-circle">
+						<div class="icon-box-circle-inner">
+							<i class="icon-line-awesome-internet-explorer"></i>
+							<div class="icon-box-check"><i class="icon-material-outline-check"></i></div>
+						</div>
+					</div>
+					<h3>Get Relevant Applications</h3>
+					<p>Update your open positions and get ongoing applications from relevant applicants</p>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-md-4">
+				<!-- Icon Box -->
+				<div class="icon-box">
+					<!-- Icon -->
+					<div class="icon-box-circle">
+						<div class="icon-box-circle-inner">
+							<i class=" icon-line-awesome-thumbs-up"></i>
+							<div class="icon-box-check"><i class="icon-material-outline-check"></i></div>
+						</div>
+					</div>
+					<h3>Start Interviewing</h3>
+					<p>Screen and connect directly with the relevant candidates you'd like to move forward with</p>
+				</div>
+            
+			</div>
+           
+                
+                    <div class="intro-search-index">
+						<button class="button ripple-effect" onclick="window.location.href='jobs-list-layout-full-page-map.html'">CONTACT US AND WE'LL GET YOU ON BOARD</button>
+					</div>
+             <div class="col-xl-12 col-md-12">
+                <br>
+                <p align="center">Who's behind this platform?<p>
+            </div>
+            
+               
+		</div>
+    <div class="pagination-container margin-top-30">
+						<nav class="pagination">
+                            <br>
+							 <div class="line-dashed-meet b-b pull-in"></div>
+						</nav>
+					</div>
+	</div>
+    
+</div>
+    
+    
+<!-- HOW IT WORKS / END -->
+<div class="container">
+    <div class="section-headline centered margin-top-0 margin-bottom-5">
+					<h3>Who's is already in?</h3>
+				</div>
+		<div class="row">
+			<div class="col-xl-12">
+				<!-- Carousel -->
+				<div class="col-md-12">
+					<div class="logo-carousel" id="company">
+                        
+						
+<!--
+						<div class="carousel-item"; id="imageBlock1">
+							<a href="#" target="_blank" title="#"><img /></a>
+						</div>
+						
+					
+                        
+-->
+
+						
+					</div>
+				</div>
+				<!-- Carousel / End -->
+			</div>
+
+		</div>
+      <div class="section-headline centered margin-top-0 margin-bottom-5">
+					<h3>Meet all the Jerusalem-based Tech Companies on our platform</h3>
+				</div>
+     <div class="pagination-container margin-top-30 margin-bottom-60">
+						<nav class="pagination">
+                            <br>
+							 <div class="line-dashed-meet b-b pull-in"></div>
+						</nav>
+					</div>
+	</div>
+
+</div>
+
+<!-- Category Boxes / End -->
+
+    
+    
+    <!-- COMPANIES -->
+<div class="section gray padding-top-65 padding-bottom-55">
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<!-- Section Headline -->
+				<div class="section-headline centered margin-top-0 margin-bottom-5">
+					<h3>What do other recruiters have to say about the platform?</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Categories Carousel -->
+	<div class="fullwidth-carousel-container margin-top-20">
+        
+		<div class="testimonial-carousel testimonials" id="dob">
+
+			
+			<!-- Item -->
+
+		</div>
+        <div class="col-md-12">
+					<!-- Pagination -->
+					<div class="pagination-container margin-top-30 margin-bottom-60">
+						<nav class="pagination">
+                            <br>
+							<div class="button">
+						<button class="button ripple-effect" onclick="window.location.href='jobs-list-layout-full-page-map.html'">I'M CONVINCED. GET ME ON BOARD</button>
+					</div>
+						</nav>
+					</div>
+				</div>
+	</div>
+    
+	<!-- Categories Carousel / End -->
+</div>
+         
+<!-- Testimonials / End -->
+
+
+
+
+
+
+
+<!-- Footer
+================================================== -->
+<div id="footer">
+	
+	<!-- Footer Top Section -->
+	<div class="footer-top-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer Top Section / End -->
+
+	<!-- Footer Middle Section -->
+	<div class="footer-middle-section">
+		<div class="container">
+			<div class="row">
+
+				<!-- Links -->
+				<div class="col-xl-6 col-lg-6 col-md-6">
+					<div class="footer-links-about">
+						<h3>What is Jerusalem Tech Jobs?</h3>
+						<ul>
+							<li><span></span></li>
+							<li><span>Jerusalem Tech Jobs is a platform focused on tech</span></li>
+							<li><span>and Life-Science companies based in Jerusalem.</span></li>
+							<li><span>Our goal is to create a friendly matching platform</span></li>
+                            <li><span>for potencial employees and companies to connect.</span></li>
+                            <br>
+                            <li><span>The project is led by 'New Spirit', The Jerusalem</span></li>
+                            <li><span>Development Authority and The Ministry of Jerusalem</span></li>
+                            <li><span>and Heritaje.Enjoy:)</span></li>
+						</ul>
+					</div>
+				</div>
+
+			
+				<div class="col-xl-6 col-lg-6 col-md-6">
+					<div class="footer-links">
+						<ul>
+							<li><a href="#"><span>Home</span></a></li>
+							<li><a href="#"><span>About</span></a></li>
+                            <li><a href="#"><span>How it Works</span></a></li>
+                            <li><a href="#"><span>Browse Companies</span></a></li>
+                            <li><a href="#"><span>For Employers</span></a></li>
+                            <li><a href="#"><span></span></a></li>
+                            <li><a href="#"><span>Terms & Conditions</span></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- Footer Middle Section / End -->
+	
+	<!-- Footer Copyrights -->
+	<div class="footer-bottom-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					© 2018 <strong>Jerusalem Tech Jobs</strong>. All Rights Reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer Copyrights / End -->
+
+</div>
+<!-- Footer / End -->
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+================================================== -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-migrate-3.0.0.min.js"></script>
+<script src="js/mmenu.min.js"></script>
+<script src="js/tippy.all.min.js"></script>
+<script src="js/simplebar.min.js"></script>
+<script src="js/bootstrap-slider.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/snackbar.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Snackbar // documentation: https://www.polonel.com/snackbar/ -->
+<script>
+// Snackbar for user status switcher
+$('#snackbar-user-status label').click(function() { 
+	Snackbar.show({
+		text: 'Your status has been changed!',
+		pos: 'bottom-center',
+		showAction: false,
+		actionText: "Dismiss",
+		duration: 3000,
+		textColor: '#fff',
+		backgroundColor: '#383838'
+	}); 
+}); 
+</script>
+
+
+<!-- Google Autocomplete -->
+<script>
+	function initAutocomplete() {
+		 var options = {
+		  types: ['(cities)'],
+		  // componentRestrictions: {country: "us"}
+		 };
+
+		 var input = document.getElementById('autocomplete-input');
+		 var autocomplete = new google.maps.places.Autocomplete(input, options);
+	}
+
+	// Autocomplete adjustment for homepage
+	if ($('.intro-banner-search-form')[0]) {
+	    setTimeout(function(){ 
+	        $(".pac-container").prependTo(".intro-search-field.with-autocomplete");
+	    }, 300);
+	}
+
+</script>
+    
+    <script>  //img in div
+         
+         
+         $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/companiesLogosAndNames', 
+    //data: { get_param: 'companies' }, 
+    dataType: 'json',
+    success: function (data) {
+        
+        let jsonObject = JSON.parse(JSON.stringify(data.companies));
+        console.log(jsonObject);
+        jsonObject.forEach((item, idx) => {
+        let Doc = document.getElementById("company");
+        let Div = document.createElement("div");
+        Div.className = 'carousel-item';  //Div.className = `job-listing-details_${idx}`; //индексирование класса
+        const collectOfDiv = Div.innerHTML = `
+        <a href="company_profile.html#${item._id}" ><img src="${item.logoImageLink}">
+        </a>
+        `
+        console.log(Div)
+        Doc.appendChild(Div);
+        $('#company').slick('refresh');
+ });
+        
+}       
+                            })
+         
+         
+                           
+ 
+              
+  
+</script>
+    <script>  //txt in div
+         
+         
+         $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/jobposts', 
+    //data: { get_param: 'companies' }, 
+    dataType: 'json',
+    success: function (data) {
+        
+        let jsonObject = JSON.parse(JSON.stringify(data.jobPosts));
+        console.log(jsonObject);
+        jsonObject.forEach((item, idx) => {
+        let Doc = document.getElementById("dob");
+        let Div = document.createElement("div");
+        Div.className = 'fw-carousel-review margin-top-30';  //Div.className = `job-listing-details_${idx}`; //индексирование класса
+        const collectOfDiv = Div.innerHTML = `
+<div class="testimonial-box"><div class="testimonial-avatar"><img src="${item.companyId.logoImageLink}"></div><div class="testimonial-author"><h3><strong>${item.companyName}</strong></h3><h3>${item.publicTitle}</h3><br></div><div class="testimonial">${item.description}</div></div></div>
+        
+        `
+        console.log(Div)
+        Doc.appendChild(Div);
+        $('#dob').slick('refresh');
+ });
+        
+}       
+                            })
+         
+         
+                           
+ 
+              
+  
+</script>
+    
+
+<!-- Google API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g&libraries=places&callback=initAutocomplete"></script>
+
+</body>
+</html>

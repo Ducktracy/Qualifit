@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>EXAMPLE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/blue.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+
+</head>
+  <script> //image-logo
+        
+  $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/companiesLogosAndNames', 
+    //data: { get_param: 'companies' }, 
+    dataType: 'json',
+    success: function (data) {
+        
+        let jsonObject = JSON.parse(JSON.stringify(data.companies));
+        var a = (jsonObject[0].logoImageLink);
+        var b = (jsonObject[1].logoImageLink);
+        var c = (jsonObject[2].logoImageLink);
+        var d = (jsonObject[3].logoImageLink);
+        var e = (jsonObject[4].logoImageLink);
+      
+        
+      
+        
+        $('#imageBlock1').find('img').attr('src',a);
+        $('#imageBlock2').find('img').attr('src',b);
+        $('#imageBlock3').find('img').attr('src',c);
+        $('#imageBlock4').find('img').attr('src',d);
+        $('#imageBlock5').find('img').attr('src',e);
+       
+        
+    }
+  });
+        
+        
+    </script>
+    
+    <script> //Description
+        
+  $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/jobposts', 
+    //data: { get_param: 'companies' }, 
+    dataType: 'json',
+    success: function (data) {
+        
+        let jsonObject = JSON.parse(JSON.stringify(data));
+        var a = (jsonObject.jobPosts[0].description);
+        var b = (jsonObject.jobPosts[1].description);
+        var c = (jsonObject.jobPosts[2].description);
+        var d = (jsonObject.jobPosts[3].description);
+        
+    
+        $('#description1').append( a );
+        $('#description2').append( b );
+        $('#description3').append( c );
+        $('#description4').append( d );
+        
+    }
+  });
+        
+        
+    </script>
+    
+    <script> //Public Title
+        
+  $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/jobposts', 
+    //data: { get_param: 'companies' }, 
+    dataType: 'json',
+    success: function (data) {
+        
+        let jsonObject = JSON.parse(JSON.stringify(data));
+        var a = (jsonObject.jobPosts[0].publicTitle);
+        var b = (jsonObject.jobPosts[1].publicTitle);
+        var c = (jsonObject.jobPosts[2].publicTitle);
+        var d = (jsonObject.jobPosts[3].publicTitle);
+        
+    
+        $('#public-title1').append( a );
+        $('#public-title2').append( b );
+        $('#public-title3').append( c );
+        $('#public-title4').append( d );
+        
+    }
+  });
+        
+        
+    </script>
+    
+    <script> //Company Name
+        
+  $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/jobposts', 
+    //data: { get_param: 'companies' }, 
+    dataType: 'json',
+    success: function (data) {
+        
+        let jsonObject = JSON.parse(JSON.stringify(data));
+        var a = (jsonObject.jobPosts[0].companyName);
+        var b = (jsonObject.jobPosts[1].companyName);
+        var c = (jsonObject.jobPosts[2].companyName);
+        var d = (jsonObject.jobPosts[3].companyName);
+        
+    
+        $('#company-name1').append( a );
+        $('#company-name2').append( b );
+        $('#company-name3').append( c );
+        $('#company-name4').append( d );
+        
+    }
+  });
+        
+        
+    </script>
+    
+    <script> //company-avatar
+        
+ $.ajax({ 
+    type: 'GET', 
+    url: 'https://www.jerusalemtechjobs.com/landingPage/jobposts', 
+    //data: { get_param: 'companies' }, 
+    dataType: 'json',
+    success: function (data) {
+        
+        let jsonObject = JSON.parse(JSON.stringify(data));
+        var a = (jsonObject.jobPosts[0].companyId.logoImageLink);
+        var b = (jsonObject.jobPosts[1].companyId.logoImageLink);
+        var c = (jsonObject.jobPosts[2].companyId.logoImageLink);
+        var d = (jsonObject.jobPosts[3].companyId.logoImageLink);
+        
+    
+        $('#image-avatar1').find('img').attr('src',a);
+        $('#image-avatar2').find('img').attr('src',b);
+        $('#image-avatar3').find('img').attr('src',c);
+        $('#image-avatar4').find('img').attr('src',d);
+     
+        
+    }
+  });
+        
+        
+    </script>
+    
+  
+
+
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+
+	<!-- Header Container
+================================================== -->
+<header id="header-container" class="fullwidth">
+
+	<!-- Header -->
+	<div id="header">
+		<div class="container">
+			
+			<!-- Left Side Content -->
+			<div class="left-side">
+				
+				<!-- Logo -->
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+
+				<!-- Main Navigation -->
+				<nav id="navigation">
+					<ul id="responsive">
+
+						<li><a href="#" class="current">Home</a>
+						</li>
+
+						<li><a href="home.html">About</a>
+						</li>
+
+						<li><a href="how_it_works.html">How it works</a>
+							
+						</li>
+
+						<li><a href="meet_companies.html">Meet the Companies</a>
+							
+						</li>
+
+						<li><a href="for_employers.html">For Employers</a>
+							
+						</li>
+
+					</ul>
+				</nav>
+				<div class="clearfix"></div>
+			
+				
+			</div>
+		
+			<div class="right-side">
+
+				
+
+				<!-- User Menu -->
+				<div class="header-widget">
+
+					<!-- Messages -->
+					<div class="header-notifications user-menu">
+						<div class="header-notifications-trigger">
+							<a href="#"><div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div></a>
+						</div>
+
+						<!-- Dropdown -->
+						<div class="header-notifications-dropdown">
+
+							<!-- User Status -->
+							<div class="user-status">
+
+								<!-- User Name / Avatar -->
+								<div class="user-details">
+									<div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div>
+									<div class="user-name">
+										Tom Smith <span>Freelancer</span>
+									</div>
+								</div>
+								
+								<!-- User Status Switcher -->
+								<div class="status-switch" id="snackbar-user-status">
+									<label class="user-online current-status">Online</label>
+									<label class="user-invisible">Invisible</label>
+									<!-- Status Indicator -->
+									<span class="status-indicator" aria-hidden="true"></span>
+								</div>	
+						</div>
+						
+						<ul class="user-menu-small-nav">
+							<li><a href="dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
+							<li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
+							<li><a href="index-logged-out.html"><i class="icon-material-outline-power-settings-new"></i> Logout</a></li>
+						</ul>
+
+						</div>
+					</div>
+
+				</div>
+				<!-- User Menu / End -->
+
+				<!-- Mobile Navigation Button -->
+				<span class="mmenu-trigger">
+					<button class="hamburger hamburger--collapse" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</span>
+
+			</div>
+			<!-- Right Side Content / End -->
+
+		</div>
+	</div>
+	<!-- Header / End -->
+
+
+</header>
+<div class="clearfix"></div>
+<!-- Header Container / End -->
+
+
+
+<!-- Intro Banner
+================================================== -->
+<!-- add class "disable-gradient" to enable consistent background overlay -->
+<div class="intro-banner" data-background-image="images/work_4.jpg">
+	<div class="container">
+        <div class="footer-links-index">
+						<h2>Find Your Next  Job.</h2>
+						<ul>
+							<li><span></span></li>
+							<li><span>Discover and explore open positions in the Jurasalem tech scene.</span></li>
+							<li><span>Get notified about relevant opportunities and apply directly.</span></li>
+						</ul>
+					</div>
+		
+		<!-- Intro Headline -->
+		
+		<!-- Search Bar -->
+		<div class="row">
+			<div class="col-md-4">
+				<div class="intro-banner-search-form margin-top-95">
+
+
+					<!-- Button -->
+					<div class="intro-search-button">
+						<button class="button ripple-effect" onclick="window.location.href='jobs-list-layout-full-page-map.html'">FIND ME A JOB!</button>
+                          
+					</div>
+                    <div class="footer-links-index">
+                        <h4>Hiring in Jerusalem? Join us, it's free.</h4>
+            </div>
+                      
+                   
+				</div>
+			</div>
+		</div>
+
+		<!-- Stats -->
+		<div class="row">
+			<div class="col-md-12">
+                
+				<ul class="intro-stats margin-top-45 hide-under-992px">
+					<li>
+						<strong class="counter">1,000</strong>
+						<span>jobs posted</span>
+					</li>
+					<li>
+						<strong class="counter">1,000</strong>
+						<span>candidates like you</span>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<!-- Content
+================================================== -->
+<!-- Category Boxes -->
+<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<!-- Carousel -->
+				<div class="col-md-12">
+                     <div class="col-xl-12 col-md-12">
+                <br>
+                <p align="center">50+ Companies are already here, including:<p>
+            </div>
+					<div class="logo-carousel">
+                        
+						
+						<div class="carousel-item"; id="imageBlock1">
+							<a href="#" target="_blank" title="#"><img /></a>
+						</div>
+						
+						<div class="carousel-item"; id="imageBlock2">
+							<a href="#" target="_blank" title="#"><img /></a>
+						</div>
+						
+						<div class="carousel-item"; id="imageBlock3">
+							<a href="#" target="_blank" title="#"><img /></a>
+						</div>
+						
+						<div class="carousel-item"; id="imageBlock4">
+							<a href="#" target="_blank" title="#"><img /></a>
+						</div>
+						
+						<div class="carousel-item"; id="imageBlock5">
+							<a href="#" target="_blank" title="#"><img /></a>
+						</div>
+                        
+
+						
+					</div>
+                    <div class="col-xl-12 col-md-12">
+                <br>
+                <p align="center">Meet all the Jerusalem-based Tech and Life-Science Companies on our platform<p>
+            </div>
+				</div>
+				<!-- Carousel / End -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Category Boxes / End -->
+
+<!--HOW IT WORKS-->
+       <div class="section  padding-bottom-65">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xl-12">
+				<!-- Section Headline -->
+                <div class="pagination-container">
+						<nav class="pagination">
+                            <br>
+							 <div class="line-dashed-meet b-b pull-in"></div>
+						</nav>
+					</div>
+				<div class="section-headline centered margin-top-0 margin-bottom-5">
+					<h3>How It Works?</h3>
+				</div>
+			</div>
+			
+			<div class="col-xl-4 col-md-4">
+				<!-- Icon Box -->
+				<div class="icon-box with-line">
+					<!-- Icon -->
+					<div class="icon-box-circle">
+						<div class="icon-box-circle-inner">
+							<i class="icon-feather-award"></i>
+							<div class="icon-box-check"><i class="icon-material-outline-check"></i></div>
+						</div>
+					</div>
+					<h3>Create your profile</h3>
+					<p>Create your personal profile with your skills, experience and your wishes.<br>It only takes 5 minutes.</p>
+				</div>
+                
+			</div>
+
+			<div class="col-xl-4 col-md-4">
+				<!-- Icon Box -->
+				<div class="icon-box with-line">
+					<!-- Icon -->
+					<div class="icon-box-circle">
+						<div class="icon-box-circle-inner">
+							<i class="icon-line-awesome-internet-explorer"></i>
+							<div class="icon-box-check"><i class="icon-material-outline-check"></i></div>
+						</div>
+					</div>
+					<h3>Explore Relevant Jobs</h3>
+					<p>Get ongoing notifications about relevant positions via email/SMS</p>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-md-4">
+				<!-- Icon Box -->
+				<div class="icon-box">
+					<!-- Icon -->
+					<div class="icon-box-circle">
+						<div class="icon-box-circle-inner">
+							<i class=" icon-line-awesome-thumbs-up"></i>
+							<div class="icon-box-check"><i class="icon-material-outline-check"></i></div>
+						</div>
+					</div>
+					<h3>Pick and Apply</h3>
+					<p>Choose the opportunities that interests you and apply immediately. If relevant, the companies will reach out to you directly.</p>
+				</div>
+            
+			</div>
+           
+                
+                    <div class="intro-search-index">
+						<button class="button ripple-effect" onclick="window.location.href='jobs-list-layout-full-page-map.html'">CREATE A PROFILE</button>
+					</div>
+             <div class="col-xl-12 col-md-12">
+                <br>
+                <p align="center">Still not clear? get more info about how this magic works<p>
+            </div>
+            
+               
+		</div>
+    <div class="pagination-container margin-top-30">
+						<nav class="pagination">
+                            <br>
+							 <div class="line-dashed-meet b-b pull-in"></div>
+						</nav>
+					</div>
+	</div>
+    
+</div>
+<!-- HOW IT WORKS / END -->
+    
+    
+    
+    <!-- WHO IS RELEVANT -->
+<div class="section margin-top-65">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+
+				<div class="section-headline centered margin-bottom-15">
+					<h3>Who's is relevant for?</h3>
+				</div>
+
+				<!-- Category Boxes Container -->
+				<div class="categories-container">
+
+					<!-- Category Box -->
+					<a href="jobs-grid-layout-full-page.html" class="category-box">
+						<div class="category-box-icon">
+							<i class="icon-line-awesome-file-code-o"></i>
+						</div>
+						<div class="category-box-counter">612</div>
+						<div class="category-box-content">
+							<h3>Web & Software Dev</h3>
+							<p>Software Engineer, Web / Mobile Developer & More</p>
+						</div>
+					</a>
+
+					<!-- Category Box -->
+					<a href="jobs-list-layout-full-page-map.html" class="category-box">
+						<div class="category-box-icon">
+							<i class="icon-line-awesome-cloud-upload"></i>
+						</div>
+						<div class="category-box-counter">113</div>
+						<div class="category-box-content">
+							<h3>Data Science & Analitycs</h3>
+							<p>Data Specialist / Scientist, Data Analyst & More</p>
+						</div>
+					</a>
+
+					<!-- Category Box -->
+					<a href="jobs-list-layout-full-page-map.html" class="category-box">
+						<div class="category-box-icon">
+							<i class="icon-line-awesome-suitcase"></i>
+						</div>
+						<div class="category-box-counter">186</div>
+						<div class="category-box-content">
+							<h3>Product & Design</h3>
+							<p>Product Managers,</p>
+                                <p>UX/UI Designers & More</p>
+						</div>
+					</a>
+
+					<!-- Category Box -->
+					<a href="jobs-list-layout-1.html" class="category-box">
+						<div class="category-box-icon">
+							<i class="icon-line-awesome-pencil"></i>
+						</div>
+						<div class="category-box-counter">298</div>
+						<div class="category-box-content">
+							<h3>Life Science</h3>
+							<p>Lead Scientists, Lab Managers,</p>
+                            <p>Technicians & More</p>
+						</div>
+					</a>
+
+					<!-- Category Box -->
+					<a href="jobs-list-layout-2.html" class="category-box">
+						<div class="category-box-icon">
+							<i class="icon-line-awesome-pie-chart"></i>
+						</div>
+						<div class="category-box-counter">549</div>						
+						<div class="category-box-content">
+							<h3>Hardware & Electronics</h3>
+							<p>Hardware, Electrical Engineers,</p>
+                            <p>Embedded Engineers & More</p>
+						</div>
+					</a>
+
+					<!-- Category Box -->
+					<a href="jobs-list-layout-1.html" class="category-box">
+						<div class="category-box-icon">
+							<i class="icon-line-awesome-image"></i>
+						</div>
+						<div class="category-box-counter">873</div>
+						<div class="category-box-content">
+							<h3>Business & Sales</h3>
+							<p>Business Development, Sales</p>
+                            <p>Customer Service & More</p>
+						</div>
+					</a>
+
+					<!-- Category Box -->
+					<a href="jobs-list-layout-2.html" class="category-box">
+						<div class="category-box-icon">
+							<i class="icon-line-awesome-bullhorn"></i>
+						</div>
+						<div class="category-box-counter">125</div>
+						<div class="category-box-content">
+							<h3>Marketing</h3>
+							<p>Digital Marketing, Social</p>
+                            <p>Media, Content & More</p>
+						</div>
+					</a>
+
+					<!-- Category Box -->
+					<a href="jobs-grid-layout-full-page.html" class="category-box">
+						<div class="category-box-icon">
+							<i class="icon-line-awesome-graduation-cap"></i>
+						</div>
+						<div class="category-box-counter">445</div>
+						<div class="category-box-content">
+							<h3>Students</h3>
+							<p>Students, Junior</p>
+                            <p>Positions & More</p>
+						</div>
+					</a>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- WHO IS RELEVANT / End -->
+    
+    <!-- COMPANIES -->
+<div class="section gray padding-top-65 padding-bottom-55">
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<!-- Section Headline -->
+				<div class="section-headline centered margin-top-0 margin-bottom-5">
+					<h3>Here's Sneak Peek of Selected Opportunities</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section gray padding-top-65 padding-bottom-55">
+	
+	
+	<!-- Categories Carousel -->
+	<div class="fullwidth-carousel-container margin-top-20">
+        
+		<div class="testimonial-carousel testimonials">
+
+			<!-- Item -->
+			<div class="fw-carousel-review">
+				<div class="testimonial-box">
+					<div class="testimonial-avatar" id="image-avatar1">
+						<img />
+					</div>
+					<div class="testimonial-author">
+						<h3 ><strong id="company-name1"></strong></h3>
+						 <h3 id="public-title1"></h3>
+                        <br>
+                        <h3></h3>
+					</div>
+					<div class="testimonial" id="description1"></div>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="fw-carousel-review">
+				<div class="testimonial-box">
+					<div class="testimonial-avatar" id="image-avatar2">
+						<img />
+					</div>
+					<div class="testimonial-author">
+						<h3 ><strong id="company-name2"></strong></h3>
+						 <h3 id="public-title2"></h3>
+                        <br>
+                        <h3></h3>
+					</div>
+					<div class="testimonial" id="description2"></div>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="fw-carousel-review">
+				<div class="testimonial-box">
+					<div class="testimonial-avatar" id="image-avatar3">
+						<img />
+					</div>
+					<div class="testimonial-author">
+						<h3 ><strong id="company-name3"></strong></h3>
+						 <h3 id="public-title3"></h3>
+                        <br>
+                        <h3></h3>
+					</div>
+					<div class="testimonial" id="description3"></div>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="fw-carousel-review">
+				<div class="testimonial-box">
+					<div class="testimonial-avatar" id="image-avatar4">
+						<img />
+					</div>
+					<div class="testimonial-author">
+						<h3 ><strong id="company-name4"></strong></h3>
+						 <h3 id="public-title4"></h3>
+                        <br>
+                        <h3></h3>
+					</div>
+					<div class="testimonial" ><p id="description4"></p></div>
+				</div>
+			</div>
+
+			<!-- Item -->
+			
+
+		</div>
+        <div class="col-md-12">
+					<!-- Pagination -->
+					<div class="pagination-container margin-top-30 margin-bottom-60">
+						<nav class="pagination">
+                            <br>
+							<div class="button">
+						<button class="button ripple-effect" onclick="window.location.href='jobs-list-layout-full-page-map.html'">I WANT TO BE IN</button>
+					</div>
+						</nav>
+					</div>
+				</div>
+	</div>
+    
+	<!-- Categories Carousel / End -->
+</div>
+         
+<!-- Testimonials / End -->
+
+
+
+
+
+
+
+
+<!-- Footer
+================================================== -->
+<div id="footer">
+	
+	<!-- Footer Top Section -->
+	<div class="footer-top-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+
+					<!-- Footer Rows Container -->
+					<!-- Footer Rows Container / End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer Top Section / End -->
+
+	<!-- Footer Middle Section -->
+	<div class="footer-middle-section">
+		<div class="container">
+			<div class="row">
+
+				<!-- Links -->
+				<div class="col-xl-6 col-lg-6 col-md-6">
+					<div class="footer-links-about">
+						<h3>What is Jerusalem Tech Jobs?</h3>
+						<ul>
+							<li><span>Jerusalem Tech Jobs is a platform focused on tech</span></li>
+							<li><span>and Life-Science companies based in Jerusalem.</span></li>
+							<li><span>Our goal is to create a friendly matching platform</span></li>
+                            <li><span>for potencial employees and companies to connect.</span></li>
+                            <br>
+                            <li><span>The project is led by 'New Spirit', The Jerusalem</span></li>
+                            <li><span>Development Authority and The Ministry of Jerusalem</span></li>
+                            <li><span>and Heritaje.Enjoy:)</span></li>
+						</ul>
+					</div>
+				</div>
+
+				
+-->
+				<!-- Links --><br>
+				<div class="col-xl-6 col-lg-6 col-md-6">
+					<div class="footer-links">
+						<ul>
+							<li><a href="#"><span>Home</span></a></li>
+							<li><a href="#"><span>About</span></a></li>
+                            <li><a href="#"><span>How it Works</span></a></li>
+                            <li><a href="#"><span>Browse Companies</span></a></li>
+                            <li><a href="#"><span>For Employers</span></a></li>
+                            <li><a href="#"><span></span></a></li>
+                            <li><a href="#"><span>Terms & Conditions</span></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- Footer Middle Section / End -->
+	
+	<!-- Footer Copyrights -->
+	<div class="footer-bottom-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					© 2018 <strong>Jerusalem Tech Jobs</strong>. All Rights Reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer Copyrights / End -->
+
+</div>
+<!-- Footer / End -->
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+================================================== -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-migrate-3.0.0.min.js"></script>
+<script src="js/mmenu.min.js"></script>
+<script src="js/tippy.all.min.js"></script>
+<script src="js/simplebar.min.js"></script>
+<script src="js/bootstrap-slider.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/snackbar.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Snackbar // documentation: https://www.polonel.com/snackbar/ -->
+<script>
+// Snackbar for user status switcher
+$('#snackbar-user-status label').click(function() { 
+	Snackbar.show({
+		text: 'Your status has been changed!',
+		pos: 'bottom-center',
+		showAction: false,
+		actionText: "Dismiss",
+		duration: 3000,
+		textColor: '#fff',
+		backgroundColor: '#383838'
+	}); 
+}); 
+</script>
+
+
+<!-- Google Autocomplete -->
+<script>
+	function initAutocomplete() {
+		 var options = {
+		  types: ['(cities)'],
+		  // componentRestrictions: {country: "us"}
+		 };
+
+		 var input = document.getElementById('autocomplete-input');
+		 var autocomplete = new google.maps.places.Autocomplete(input, options);
+	}
+
+	// Autocomplete adjustment for homepage
+	if ($('.intro-banner-search-form')[0]) {
+	    setTimeout(function(){ 
+	        $(".pac-container").prependTo(".intro-search-field.with-autocomplete");
+	    }, 300);
+	}
+
+</script>
+    
+    
+
+<!-- Google API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g&libraries=places&callback=initAutocomplete"></script>
+
+</body>
+</html>

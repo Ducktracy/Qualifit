@@ -1,0 +1,10 @@
+{"success":true,
+ "jobPosts":[{
+     "_id":"5bba3eb7da01ab186ba31cfa",
+"companyId":{
+    "_id":"5bba3790e5486216586297cd",
+    "logoImageLink":"https://qualimatchstorage.blob.core.windows.net/jerusalem-company-images/logo_2018-10-07T16:41:26.482Zl2F0Bz_.jpg"},
+"companyName":"Mobileye",
+     "publicTitle":" C++ Developer",
+     "description":"Mobileye changes the way we drive, from preventing accident to semi and full autonomous vehicle. If you are excellent, bright, hands on person with passion to make a difference come to lead the revolution!\n\nWhat will you do?\n\nResearch, select and tune machine learning models and algorithms to enrich our knowledge on various activities done in the research world using multiple data sources.\nAnalyze data to assess the algorithm quality and performance and find areas for improvement.\nWork with the development team to integrate these algorithms with the production data sources and the application ecosystem.\nExplore new entity profiling algorithms, build entity graphs, construct new features, and research new technologies.",
+     "tags":[]}]}
